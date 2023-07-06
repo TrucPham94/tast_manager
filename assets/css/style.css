@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
+  background: #131517;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:root {
+  --primary: linear-gradient(90deg, #eb9204 1.67%, #83e868 89.99%);
+}
+
+.container {
+  width: 1400px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+/* Navigation */
+.navbar {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  gap: 36px;
+}
+
+.nav_link {
+  color: #858b93;
+}
+
+.active {
+  position: relative;
+}
+.active::after {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 2px;
+  background-color: greenyellow;
+  left: 0;
+  bottom: -5px;
+}
+
+.sign_in_btn {
+  background: var(--primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 8px;
+  border: 1px solid var(--text-color-dark-blue, #272633);
+  padding: 8px 27px 8px 26px;
+}
+
+/* Hero */
+.hero__inner {
+  margin-top: 159px;
+  display: flex;
+}
+
+/* left hero */
+.aside_buble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.buble {
+  box-shadow: 0px 39px 31px 0px #313141 inset;
+  background-color: linear-gradient(
+    180deg,
+    #111118 4.96%,
+    rgba(43, 43, 61, 0) 100%
+  );
+  border-radius: 50%;
+}
+
+.aside_buble:first-child {
+  margin-left: 20px;
+}
+
+.aside_buble:last-child {
+  margin-right: 30px;
+}
+.buble1 {
+  width: 121px;
+  height: 121px;
+}
+
+.buble2 {
+  margin-top: 41px;
+  width: 39px;
+  height: 39px;
+}
+
+.buble3 {
+  margin-top: 36px;
+  width: 25px;
+  height: 25px;
+}
+.buble4 {
+  margin-top: 39px;
+  width: 14px;
+  height: 14px;
+}
+
+.mid_content {
+  width: 783px;
+  margin-left: 31px;
+  margin-right: 33px;
+}
+
+.mid_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_content {
+  width: 783px;
+  text-align: center;
+  color: #f9f9f9;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 7rem;
+}
+
+.mid_content_desc {
+  margin-top: 34px;
+  width: 447px;
+  font-size: 1.6rem;
+  line-height: 26px;
+  color: var(--text-color-gray-1, #858b93);
+  text-align: center;
+}
+
+.special_text {
+  background: var(--primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid var(--text-color-dark-blue, #272633);
+  border: 1px dashed #ccc;
+  position: relative;
+}
+.special_text::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 9px;
+  background-color: #ae8ff9;
+  border-radius: 4.5px 4.5px 4.5px 0px;
+  transform: rotate(256deg);
+  top: -9px;
+  left: -10px;
+}
+
+.special_text::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 9px;
+  background-color: #ff7667;
+  border-radius: 4.5px 4.5px 4.5px 0px;
+  transform: rotate(-179.262deg);
+  top: 75px;
+  left: -10px;
+}
+
+.mid_link {
+  margin-top: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  width: 199px;
+  height: 54px;
+  line-height: 54px;
+  border-radius: 8px;
+  color: #f9f9f9;
+}
+
+.btn1 {
+  background: var(--primary);
+}
+
+.btn2 {
+  background-color: #282c30;
+}
+
+/* dashboard */
+.dasboard_inner {
+  margin: 111px auto 0;
+  width: 848px;
+  height: 366px;
+  border-radius: 8px 8px 0px 0px;
+  background: #1f2326;
+}
+
+.dasboard_ui {
+  position: relative;
+  width: 144px;
+  height: 18px;
+}
+
+.dashboard_icon {
+  margin-left: 16px;
+  position: absolute;
+  margin-top: 18px;
+  display: flex;
+}
+
+.db_icon {
+  margin-left: 25px;
+  margin-right: 17px;
+}
+
+.dashboard_text {
+  color: #98989c;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.collection_text {
+  position: absolute;
+  margin-top: 51px;
+  margin-left: 16px;
+  color: #f9f9f9;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.right_dashboard {
+  position: absolute;
+  width: 641px;
+  height: 338px;
+  background: #0d1012;
+  margin-top: 28px;
+  margin-left: 192px;
+  margin-right: 15px;
+}
