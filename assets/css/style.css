@@ -246,6 +246,74 @@ a {
   font-weight: 600;
 }
 
+.left_dashboard__heading {
+  margin-top: 26px;
+  padding-left: 25px;
+  display: flex;
+  gap: 65px;
+}
+
+.collection_text2 {
+  color: #f9f9f9;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* 
+**** LEFT DASHBOARD
+ */
+.left_dashboard {
+  position: absolute;
+  background: #0d1012;
+  border-radius: 15px 15px 22px 22px;
+  width: 216px;
+  height: 335px;
+  margin-top: 177px;
+  margin-left: -51px;
+}
+
+.left_dashboard__option {
+  margin-top: 21px;
+  margin-left: 15px;
+  margin-right: 13px;
+  border-radius: 13px;
+  background: #14181b;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+}
+.left_dashboard__option_heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.left_dashboard__option_desc__title {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.left_dashboard__option_desc__content {
+  color: #858b93;
+  font-size: 1rem;
+  line-height: normal;
+}
+.chart {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timegone_num {
+  color: #858b93;
+  font-size: 1rem;
+  line-height: normal;
+}
+
+/* RIGHT DASHBOARD */
+
 .right_dashboard {
   position: absolute;
   width: 641px;
@@ -254,4 +322,37 @@ a {
   margin-top: 28px;
   margin-left: 192px;
   margin-right: 15px;
+}
+
+.school,
+.personal {
+  margin-top: 81px;
+  width: 192px;
+  height: 39px;
+  background: #2b2d2f;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon_school,
+.icon_personal {
+  margin-left: 16px;
+}
+
+.text_school {
+  color: #d5d5d6;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.personal {
+  background: none;
+  margin-top: 133px;
+}
+
+.text_personal {
+  color: #858b93;
+  font-size: 1.2rem;
 }
