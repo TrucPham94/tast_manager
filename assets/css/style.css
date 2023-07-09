@@ -73,13 +73,13 @@ a {
 }
 
 /* left hero */
-.aside_buble {
+.aside_bubble {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-.buble {
+.bubble {
   box-shadow: 0px 39px 31px 0px #313141 inset;
   background-color: linear-gradient(
     180deg,
@@ -89,30 +89,30 @@ a {
   border-radius: 50%;
 }
 
-.aside_buble:first-child {
+.aside_bubble:first-child {
   margin-left: 20px;
 }
 
-.aside_buble:last-child {
+.aside_bubble:last-child {
   margin-right: 30px;
 }
-.buble1 {
+.bubble1 {
   width: 121px;
   height: 121px;
 }
 
-.buble2 {
+.bubble2 {
   margin-top: 41px;
   width: 39px;
   height: 39px;
 }
 
-.buble3 {
+.bubble3 {
   margin-top: 36px;
   width: 25px;
   height: 25px;
 }
-.buble4 {
+.bubble4 {
   margin-top: 39px;
   width: 14px;
   height: 14px;
@@ -205,37 +205,84 @@ a {
 }
 
 /* dashboard */
-.dasboard_inner {
+.dashboard_inner {
   margin: 111px auto 0;
   width: 848px;
   height: 366px;
   border-radius: 8px 8px 0px 0px;
   background: #1f2326;
-}
-
-.dasboard_ui {
   position: relative;
-  width: 144px;
-  height: 18px;
 }
 
-.dashboard_icon {
-  margin-left: 16px;
+/* Dashboard Text */
+.dashboard_ui {
+  position: relative;
+}
+.dashboard_ui__heading {
   position: absolute;
-  margin-top: 18px;
   display: flex;
+  align-items: center;
+  padding-top: 18px;
+  margin-left: 16px;
 }
 
-.db_icon {
+.icon_dashboard {
   margin-left: 25px;
   margin-right: 17px;
 }
 
-.dashboard_text {
+.dasboard_text {
   color: #98989c;
+  text-align: center;
+  font-size: 1.4ren;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.dashboard_ui__text {
+  margin-top: 51px;
+  margin-left: 16px;
+  color: #f9f9f9;
   font-size: 1.4rem;
   font-weight: 600;
+  line-height: normal;
+  position: absolute;
+  margin-top: 51px;
 }
+
+.selection_top,
+.selection_top2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 16px;
+  position: absolute;
+  margin-top: 81px;
+  width: 192px;
+  height: 39px;
+}
+
+.selection_top2 {
+  margin-top: 133px;
+  background: transparent;
+}
+
+.selection_top:hover,
+.selection_top2:hover {
+  background: #2b2d2f;
+  cursor: pointer;
+}
+
+.selection_top_text {
+  color: #858b93;
+  font-size: 1.2rem;
+}
+
+.selection_top_text:hover {
+  color: #d5d5d6;
+  font-weight: 600;
+}
+/* right option */
 
 .collection_text {
   position: absolute;
@@ -306,7 +353,7 @@ a {
   gap: 8px;
 }
 
-.timegone_num {
+.timeGone_num {
   color: #858b93;
   font-size: 1rem;
   line-height: normal;
@@ -324,35 +371,98 @@ a {
   margin-right: 15px;
 }
 
-.school,
-.personal {
-  margin-top: 81px;
-  width: 192px;
-  height: 39px;
-  background: #2b2d2f;
-  position: absolute;
+/* End right dashboard */
+.block {
+  display: flex;
+  gap: 53px;
+  padding: 0 30px;
+}
+.right_dashboard__heading {
   display: flex;
   align-items: center;
-  gap: 10px;
+  padding-top: 25px;
+  margin-left: 140px;
 }
 
-.icon_school,
-.icon_personal {
-  margin-left: 16px;
+.right_db_desc {
+  color: #f9f9f9;
+  font-size: 1.4rem;
+  margin-left: 8px;
+  margin-right: 281px;
 }
 
-.text_school {
-  color: #d5d5d6;
+.contact_Us {
+  margin-left: 76px;
+}
+
+.sort_line {
+  display: flex;
+  gap: 8px;
+  justify-content: right;
+}
+
+.sort_line_text {
+  color: #838386;
   font-size: 1.2rem;
+}
+
+.select {
+  margin-top: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: 362px;
+  height: 30px;
+  border-radius: 10px;
+  background: #14181b;
+}
+
+.select_text {
+  color: #9ea1a7;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.select_textbold {
+  color: #c6c7ca;
   font-weight: 600;
+  line-height: normal;
 }
 
-.personal {
-  background: none;
-  margin-top: 133px;
+.right_block {
+  margin-top: 11px;
 }
 
-.text_personal {
-  color: #858b93;
-  font-size: 1.2rem;
+.right_block__text {
+  color: #f9f9f9;
+  font-size: 1.4rem;
+  margin-bottom: 9px;
+}
+.right_block__img {
+  width: 167px;
+  height: 218px;
+  object-fit: cover;
+}
+
+.right_block_pic {
+  position: relative;
+}
+
+.right_block_pic__icon {
+  position: absolute;
+  margin-top: 55%;
+  margin-left: -60%;
+}
+
+.large_bubble {
+  position: absolute;
+  width: 154px;
+  height: 154px;
+  border-radius: 50%;
+  fill: linear-gradient(183deg, #8ae764 4.96%, #e99506 100%);
+  box-shadow: 0px 39px 31px 0px #113719 inset;
+  margin-left: 90%;
+  margin-top: 10%;
 }

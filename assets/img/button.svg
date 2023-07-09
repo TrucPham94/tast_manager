@@ -1,0 +1,6 @@
+<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="button">
+<rect id="base" width="20" height="21" rx="8" fill="#151A1E"/>
+<path id="left arrow" d="M12 7L8 10.5L12 14" stroke="#D1D1D3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
